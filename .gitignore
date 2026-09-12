@@ -1,0 +1,86 @@
+# =========================
+# Knockout OS
+# Git ignore
+# =========================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.pyo
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+*.egg-info/
+dist/
+build/
+
+# ---------- Rust ----------
+target/
+
+# ---------- IDE / Editors ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Environment / secrets ----------
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.crt
+
+# ---------- Logs ----------
+*.log
+logs/
+
+# ---------- Build artifacts ----------
+build/
+out/
+dist/
+release/
+
+# ISO / disk images
+*.iso
+*.img
+*.qcow2
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+
+# ---------- Virtual machines ----------
+.vagrant/
+.virtualbox/
+
+# ---------- Temporary ----------
+tmp/
+temp/
+.cache/
+
+# ---------- Test artifacts ----------
+.pytest_cache/
+coverage.xml
+
+# ---------- Generated documentation ----------
+docs/_build/
+
+# ---------- Local configuration ----------
+config.local.*
+settings.local.*
