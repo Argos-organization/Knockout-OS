@@ -4,48 +4,49 @@
 
 Knockout OS is currently under active development.
 
-At this stage, only the latest development version is considered supported for security fixes.
-
 | Version                    | Supported |
 | -------------------------- | --------- |
 | Latest development version | Yes       |
-| Older development versions | No        |
-| Unreleased versions        | No        |
+| Older versions             | No        |
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in Knockout OS, please **do not create a public GitHub issue** containing technical details of the vulnerability.
+If you discover a security vulnerability in Knockout OS, please report it privately.
 
-Instead, report the issue privately to the project maintainers.
+**Do not create a public GitHub issue containing details of an undisclosed vulnerability.**
 
-The report should contain, when possible:
+Security vulnerabilities should be reported through GitHub's private vulnerability reporting system, when available for this repository.
 
-* A short description of the vulnerability.
-* The affected component or version.
-* Steps required to reproduce the issue.
+If private vulnerability reporting is unavailable, contact the project maintainers privately through the repository's available contact methods.
+
+## What to Include
+
+Please provide, when possible:
+
+* A clear description of the vulnerability.
+* The affected component and version.
+* Steps to reproduce the issue.
 * The potential security impact.
-* Any possible mitigation or fix you have identified.
+* Any suggested mitigation or fix.
 
-Please avoid including passwords, private keys, personal information, or other sensitive information in the report.
+Do not include passwords, private keys, personal information, or other unnecessary sensitive data.
 
 ## Security Response
 
-The maintainers will review security reports and attempt to:
+The maintainers will:
 
-1. Confirm and reproduce the vulnerability.
-2. Determine its severity and affected components.
-3. Develop or coordinate an appropriate fix.
-4. Test the fix.
+1. Review the report.
+2. Attempt to reproduce the issue.
+3. Assess its severity and impact.
+4. Develop and test an appropriate fix.
 5. Release the fix when appropriate.
-6. Publish relevant information about the vulnerability after a fix is available.
+6. Communicate relevant information about the vulnerability after remediation.
 
-Security reports will be handled confidentially as reasonably possible.
+The project will make reasonable efforts to keep vulnerability reports confidential until an appropriate resolution is available.
 
-## Security Development Principles
+## Security Principles
 
-Security is considered part of the design of Knockout OS.
-
-The project aims to:
+Knockout OS aims to:
 
 * Follow the principle of least privilege.
 * Minimize unnecessary privileges.
@@ -55,7 +56,6 @@ The project aims to:
 * Keep dependencies reasonably up to date.
 * Test security-sensitive components.
 * Separate user privileges where possible.
-* Avoid exposing unnecessary system services.
 * Document important security decisions.
 
 ## Secrets
@@ -70,19 +70,14 @@ Never commit the following to the repository:
 * Production secrets.
 * `.env` files containing real secrets.
 
-Use local configuration or a dedicated secret-management mechanism instead.
-
 ## Third-Party Components
 
 Knockout OS uses third-party software and libraries.
 
-Security issues affecting third-party components should be evaluated according to their respective security policies and licenses.
+Security issues affecting third-party components should be evaluated according to their respective security policies.
 
 Relevant third-party components and their licensing information are documented in `THIRD_PARTY_LICENSES/`.
 
 ## Scope
 
 This policy applies to security issues affecting Knockout OS source code, build tools, official scripts, system services, desktop components, and other software maintained by the project.
-
-Issues exclusively affecting third-party software should generally be reported to the relevant upstream project as well.
-
