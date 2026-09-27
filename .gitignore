@@ -1,10 +1,14 @@
 # =========================
+
 # Knockout OS
+
 # Git ignore
+
 # =========================
 
 # ---------- Python ----------
-__pycache__/
+
+**pycache**/
 *.py[cod]
 *.pyo
 
@@ -17,27 +21,32 @@ ENV/
 .mypy_cache/
 .ruff_cache/
 .coverage
+coverage.xml
 htmlcov/
 
 *.egg-info/
 dist/
-build/
 
 # ---------- Rust ----------
+
 target/
 
 # ---------- IDE / Editors ----------
+
 .vscode/
 .idea/
 *.swp
 *.swo
+*.code-workspace
 
 # ---------- OS ----------
+
 .DS_Store
 Thumbs.db
 desktop.ini
 
 # ---------- Environment / secrets ----------
+
 .env
 .env.*
 !.env.example
@@ -47,16 +56,19 @@ desktop.ini
 *.crt
 
 # ---------- Logs ----------
+
 *.log
 logs/
 
 # ---------- Build artifacts ----------
-build/
+
+build/output/
+build/cache/
 out/
-dist/
 release/
 
-# ISO / disk images
+# ---------- ISO / disk images ----------
+
 *.iso
 *.img
 *.qcow2
@@ -66,21 +78,21 @@ release/
 *.vhdx
 
 # ---------- Virtual machines ----------
+
 .vagrant/
 .virtualbox/
 
 # ---------- Temporary ----------
+
 tmp/
 temp/
 .cache/
 
-# ---------- Test artifacts ----------
-.pytest_cache/
-coverage.xml
-
 # ---------- Generated documentation ----------
+
 docs/_build/
 
 # ---------- Local configuration ----------
+
 config.local.*
 settings.local.*
