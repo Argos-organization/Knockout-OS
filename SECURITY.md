@@ -57,6 +57,7 @@ Knockout OS aims to:
 * Test security-sensitive components.
 * Separate user privileges where possible.
 * Document important security decisions.
+* Sign commits with authorized GPG keys
 
 ## Secrets
 
